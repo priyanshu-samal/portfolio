@@ -1,4 +1,3 @@
-
 import { useInView } from 'react-intersection-observer';
 
 const Experience = () => {
@@ -70,7 +69,7 @@ const Experience = () => {
               href="https://www.geeksforgeeks.org/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-4 bg-cream-DEFAULT rounded-lg hover:shadow-lg transition-shadow flex items-center justify-center text-maroon font-medium"
+              className="p-4 bg-cream-light rounded-lg hover:bg-maroon hover:text-white transition-all duration-300 flex items-center justify-center font-medium"
             >
               GeeksforGeeks
             </a>
@@ -78,7 +77,7 @@ const Experience = () => {
               href="https://leetcode.com/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-4 bg-cream-DEFAULT rounded-lg hover:shadow-lg transition-shadow flex items-center justify-center text-maroon font-medium"
+              className="p-4 bg-cream-light rounded-lg hover:bg-maroon hover:text-white transition-all duration-300 flex items-center justify-center font-medium"
             >
               Leetcode
             </a>
@@ -86,7 +85,7 @@ const Experience = () => {
               href="https://www.geeksforgeeks.org/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-4 bg-cream-DEFAULT rounded-lg hover:shadow-lg transition-shadow flex items-center justify-center text-maroon font-medium"
+              className="p-4 bg-cream-light rounded-lg hover:bg-maroon hover:text-white transition-all duration-300 flex items-center justify-center font-medium"
             >
               GeeksforGeeks
             </a>

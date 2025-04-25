@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { ExternalLink } from 'lucide-react';
@@ -8,7 +7,7 @@ const projectsData = [
     id: 1,
     title: "Destiny",
     description: "AI-powered application for travel planning and management that helps create personalized travel plans.",
-    image: "/lovable-uploads/af21c388-33cd-4406-ae9b-ae44668350de.png",
+    image: "/images/destiny-preview.png",
     technologies: ["React", "Vite", "Tailwind CSS", "Firebase", "Google Maps API"],
     highlights: [
       "Used Vite and React for a dynamic user interface",
@@ -22,7 +21,7 @@ const projectsData = [
     id: 2,
     title: "WordSmith",
     description: "AI-powered SaaS tool that simplifies content creation for threads, Instagram, blogs, and LinkedIn.",
-    image: "/lovable-uploads/3a201367-da28-4871-918d-446730a17cc5.png",
+    image: "/images/wordsmith-preview.png",
     technologies: ["Next.js", "React", "Tailwind CSS", "Gemini AI", "PostgreSQL", "Drizzle ORM"],
     highlights: [
       "Built with Next.js and React for optimal performance",
@@ -62,8 +61,8 @@ const Projects = () => {
                   key={project.id}
                   className={`p-4 mb-4 rounded-lg cursor-pointer transition-all duration-300 ${
                     activeProject === index 
-                      ? 'bg-maroon text-cream-DEFAULT shadow-lg' 
-                      : 'bg-cream-DEFAULT hover:bg-maroon hover:text-cream-DEFAULT'
+                      ? 'bg-maroon text-white shadow-lg' 
+                      : 'bg-cream-light hover:bg-maroon hover:text-white'
                   } ${inView ? 'animate-fade-in' : 'opacity-0'}`}
                   style={{ animationDelay: `${0.2 * (index + 1)}s` }}
                   onClick={() => setActiveProject(index)}
@@ -99,7 +98,7 @@ const Projects = () => {
                   <h4 className="font-bold text-lg mb-3 text-maroon">Technologies Used</h4>
                   <div className="flex flex-wrap gap-2">
                     {projectsData[activeProject].technologies.map((tech) => (
-                      <span key={tech} className="bg-maroon text-cream-DEFAULT px-3 py-1 rounded-full text-sm">
+                      <span key={tech} className="bg-maroon text-white px-3 py-1 rounded-full text-sm">
                         {tech}
                       </span>
                     ))}
@@ -116,14 +115,21 @@ const Projects = () => {
                 </div>
                 
                 <div className="mt-8">
-                  <button className="btn-primary">
+                  <a 
+                    href={projectsData[activeProject].id === 1 ? "https://destiny-delta.vercel.app/" : "https://wordsmith-gilt.vercel.app/"} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="btn-primary"
+                  >
                     View Project <ExternalLink size={16} className="ml-2" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        
       </div>
     </section>
   );

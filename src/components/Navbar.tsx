@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { Menu, X } from 'lucide-react';
@@ -45,7 +44,7 @@ const Navbar = () => {
                 <h1 className="text-2xl font-bold text-maroon">Priyanshu<span className="text-maroon-dark">.dev</span></h1>
               </Link>
             </div>
-            
+
             {/* Desktop Nav */}
             <nav className="hidden md:flex space-x-4">
               {navItems.map((item) => (
@@ -63,10 +62,10 @@ const Navbar = () => {
                 </Link>
               ))}
             </nav>
-            
+
             {/* Mobile Menu Button */}
             <div className="md:hidden">
-              <button
+              <button 
                 onClick={toggleMenu}
                 className="p-2 text-maroon hover:text-maroon-dark transition-colors"
                 aria-label="Toggle Menu"
@@ -75,30 +74,30 @@ const Navbar = () => {
               </button>
             </div>
           </div>
-        </div>
-        
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="md:hidden bg-cream-DEFAULT bg-opacity-95 backdrop-blur-sm">
-            <div className="px-4 pt-2 pb-4 space-y-2 flex flex-col">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.to}
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  activeClass="active"
-                  className="nav-link cursor-pointer py-3"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
+
+          {/* Mobile Menu */}
+          {isOpen && (
+            <div className="md:hidden bg-cream-DEFAULT bg-opacity-95 backdrop-blur-sm">
+              <div className="px-4 pt-2 pb-4 space-y-2 flex flex-col">
+                {navItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.to}
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                    activeClass="active"
+                    className="nav-link cursor-pointer py-3"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </header>
     </>
   );

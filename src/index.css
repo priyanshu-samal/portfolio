@@ -75,7 +75,23 @@
   }
   
   .card {
-    @apply bg-cream-light rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300;
+    @apply bg-cream-light rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:z-10;
+  }
+  
+  .card-dark {
+    @apply bg-maroon text-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:z-10;
+  }
+  
+  .card-light {
+    @apply bg-cream-light text-maroon rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:z-10;
+  }
+  
+  .contact-card {
+    @apply bg-maroon text-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:z-10;
+  }
+  
+  .contact-info {
+    @apply text-white/90 hover:text-white transition-colors duration-200;
   }
   
   .nav-link {

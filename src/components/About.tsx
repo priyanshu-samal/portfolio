@@ -1,4 +1,3 @@
-
 import { useInView } from 'react-intersection-observer';
 import { Code, FileText, User } from 'lucide-react';
 
@@ -18,13 +17,15 @@ const About = () => {
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className={`${inView ? 'animate-slide-in-left' : 'opacity-0'}`} style={{animationDelay: '0.2s'}}>
-            <div className="relative">
-              <div className="w-full h-full bg-maroon rounded-lg absolute -top-4 -right-4"></div>
-              <img 
-                src="/lovable-uploads/f76126a1-8b57-404d-a7e5-8d0b267ef81e.png" 
-                alt="Priyanshu Samal" 
-                className="w-full rounded-lg relative z-10 shadow-xl"
-              />
+            <div className="relative w-full h-auto aspect-[3/4] mb-4 md:mb-0 p-1">
+              <div className="w-full h-full bg-maroon rounded-lg absolute -top-4 -right-4 z-0"></div>
+              <div className="w-full h-full relative z-10 rounded-lg">
+                <img 
+                  src="/images/profile.png"
+                  alt="Priyanshu Samal"
+                  className="w-full h-full object-contain rounded-lg shadow-xl bg-cream-light"
+                />
+              </div>
             </div>
           </div>
           
@@ -39,15 +40,15 @@ const About = () => {
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
-              <div className="flex flex-col items-center p-4 rounded-lg bg-cream-dark text-maroon hover:bg-maroon hover:text-cream-DEFAULT transition-colors">
+              <div className="flex flex-col items-center p-4 rounded-lg bg-cream-dark text-maroon hover:bg-maroon hover:text-white transition-colors duration-300">
                 <User className="mb-2" size={28} />
                 <h3 className="font-bold text-lg">Full-Stack Dev</h3>
               </div>
-              <div className="flex flex-col items-center p-4 rounded-lg bg-cream-dark text-maroon hover:bg-maroon hover:text-cream-DEFAULT transition-colors">
+              <div className="flex flex-col items-center p-4 rounded-lg bg-cream-dark text-maroon hover:bg-maroon hover:text-white transition-colors duration-300">
                 <Code className="mb-2" size={28} />
                 <h3 className="font-bold text-lg">AI Enthusiast</h3>
               </div>
-              <div className="flex flex-col items-center p-4 rounded-lg bg-cream-dark text-maroon hover:bg-maroon hover:text-cream-DEFAULT transition-colors">
+              <div className="flex flex-col items-center p-4 rounded-lg bg-cream-dark text-maroon hover:bg-maroon hover:text-white transition-colors duration-300">
                 <FileText className="mb-2" size={28} />
                 <h3 className="font-bold text-lg">UI/UX Designer</h3>
               </div>
