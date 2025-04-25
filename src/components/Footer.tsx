@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-maroon-dark text-cream-DEFAULT py-12">
+    <footer className="bg-maroon-dark text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
@@ -86,7 +86,7 @@ const Footer = () => {
           <div className="mt-4 sm:mt-0">
             <a 
               href="/resume.pdf" 
-              className="text-cream-dark hover:text-cream-DEFAULT transition-colors"
+              className="text-cream-dark hover:text-white transition-colors"
               download="Priyanshu_Samal_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"

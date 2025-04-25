@@ -68,7 +68,7 @@
   }
   
   .btn-primary {
-    @apply bg-maroon text-cream-DEFAULT px-6 py-2 rounded-md hover:bg-maroon-dark transition-colors duration-200 inline-flex items-center justify-center font-medium;
+    @apply bg-maroon text-white px-6 py-2 rounded-md hover:bg-maroon-dark transition-colors duration-200 inline-flex items-center justify-center font-medium;
   }
   
   .btn-secondary {

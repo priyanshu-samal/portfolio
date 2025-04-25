@@ -60,7 +60,7 @@ const Hero = () => {
               href="https://www.linkedin.com/in/priyanshusamal-/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-maroon flex items-center justify-center text-cream-DEFAULT hover:bg-maroon-dark transition-colors"
+              className="w-10 h-10 rounded-full bg-maroon flex items-center justify-center text-white hover:bg-maroon-dark transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin size={18} />
@@ -69,7 +69,7 @@ const Hero = () => {
               href="https://x.com/PriyanshuS92042" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-maroon flex items-center justify-center text-cream-DEFAULT hover:bg-maroon-dark transition-colors"
+              className="w-10 h-10 rounded-full bg-maroon flex items-center justify-center text-white hover:bg-maroon-dark transition-colors"
               aria-label="Twitter"
             >
               <Twitter size={18} />
