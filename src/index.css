@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 @tailwind base;
@@ -72,11 +71,11 @@
   }
   
   .btn-secondary {
-    @apply bg-cream-dark text-maroon px-6 py-2 rounded-md hover:bg-cream-DEFAULT transition-colors duration-200 inline-flex items-center justify-center font-medium;
+    @apply bg-cream-dark text-maroon px-6 py-2 rounded-md hover:bg-cream-light transition-colors duration-200 inline-flex items-center justify-center font-medium;
   }
   
   .card {
-    @apply bg-cream-DEFAULT rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300;
+    @apply bg-cream-light rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300;
   }
   
   .nav-link {
