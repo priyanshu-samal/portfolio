@@ -68,8 +68,8 @@ export default {
           light: '#C7B7A3'
         },
         cream: {
-          dark: '#C7B7A3',
           DEFAULT: '#E8D8C4',
+          dark: '#C7B7A3',
           light: '#F4EDE1'
         }
       },
